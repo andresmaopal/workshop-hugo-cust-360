@@ -1,19 +1,28 @@
++++
+title = "Activate Schedules"
+menuTitle = "Activate Schedules"
+date = 2020-08-28T08:56:14-05:00
+weight = 10
+chapter = true
+pre = "<b>2.1 </b>"
++++
+
 ## Activate the schedulers to generate data from different sources
 
 
 **Step 1:** Go to [CloudWatch Events -> Rules](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#cw:dashboard=Home), and enable each of the c360v-Schedule.
 
-![cw 0](pic-cw0.png)
+![cw 0](/images/schedules/pic-cw0.png)
 
 
 **Step 2:** Check the item, go to Actions and Enable.
 
-![cf 1](pic-cw01.png)
+![cf 1](/images/schedules/pic-cw01.png)
 
 
 **Step 3:** Repeat step 2, this until all are green.
 
-![cf 2](pic-cw02.png)
+![cf 2](/images/schedules/pic-cw02.png)
 
 
 ## Verify the data created by the Lambda functions.
@@ -60,31 +69,21 @@ Go to Amazon S3 console to check the data in your raw bucket.
 
 Search for c360view buckets.
 
-![sw 0](pic-sw00.png)
+![sw 0](/images/schedules/pic-sw00.png)
 
 
 **Step 2:** Click on the c360view-us-west-2-<YOUR_ACCOUNT_ID>-raw bucket.
 Refresh the bucket while the lambda codes are running.
 
-![sw 1](pic-sw01.png)
+![sw 1](/images/schedules/pic-sw01.png)
 
 
 **Step 3:** Enter inside each folder to check the files created inside.
 
-![sw 2](pic-sw02.png)
+![sw 2](/images/schedules/pic-sw02.png)
 
 Account data, at account folder.
 
-![sw 3](pic-sw03.png)
+![sw 3](/images/schedules/pic-sw03.png)
 
 GA sessions data, at data/GA/ga_session_20YYMMDD folders.
-
-
-
-
-## Setup [Lake Formation](../lakeformation/README.md)
-
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
