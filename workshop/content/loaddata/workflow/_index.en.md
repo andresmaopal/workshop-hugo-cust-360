@@ -27,7 +27,7 @@ Go to [Lake Formation Workflows Blueprints](https://us-west-2.console.aws.amazon
 ![bp 1](/images/workflow/pic-wf02.png)
 
 *	**Database connection:** sourcemf
-*	**Source Path:** sourcemf/% (it means sourcemf database, with (%) all tables)
+*	**Source Path:** `sourcemf/%` (it means sourcemf database, with (%) all tables)
 
 ![bp 1](/images/workflow/pic-wf03.png)
 

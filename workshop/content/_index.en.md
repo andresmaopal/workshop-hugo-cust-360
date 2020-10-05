@@ -4,6 +4,8 @@ chapter = true
 weight = 1
 +++
 
+Build a 360 degree customer view - Workshop
+
 A very common use case is that organizations often look at their customers from different
 perspectives, such as Loyalty perspective, looking at metrics like: years of history,
 frequency of interaction, or a demographic perspective like stage of life or income. We
@@ -13,3 +15,7 @@ In this blog we will explore a hypothetic financial services company, as there a
 common dimensions for this industry and some dimensions that are also valid for any
 service industry, like marketing and communications, customer history or demographic
 dimension.
+
+![cust_360_dimensions](/images/intro/cust_360_dimensions.png)
+
+In this workshop you will use different sources of data to build a 360-degree Customer view using powerful AWS tools for analytics.

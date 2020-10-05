@@ -24,7 +24,7 @@ A key pair, consisting of a private key and a public key, is a set of security c
 ![Deploy 1](/images/soldeployment/pic-d-1.png)
 
 
-**Step 3:** Create a Key pair in Oregon:
+**Step 3:** Go to [Key pairs console](https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#KeyPairs:) and create a Key pair in Oregon:
 
 **Key pair name:** c360view-oregon
 
@@ -46,7 +46,7 @@ A VPC endpoint enables you to privately connect your VPC to supported AWS servic
 To know more about VPC endpoint click on [VPC endpoint documentation](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html).
 
 
-**Step 1:** Go to Amazon VPC console to create an endpoint for Amazon S3.
+**Step 1:** Go to [Amazon VPC console](https://us-west-2.console.aws.amazon.com/vpc/home?region=us-west-2#) to create an endpoint for Amazon S3, from the left Menu choose endpoints.
 
 ![Deployvpc 1](/images/soldeployment/pic-d-vpc-1.png)
 
