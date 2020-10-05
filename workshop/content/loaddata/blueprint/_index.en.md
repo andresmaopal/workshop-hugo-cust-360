@@ -28,7 +28,7 @@ Create a connection for relational database as source.
 *	**Instance:** sourcemf
 *	**Database name:** sourcemf
 *	**Username:** sourcemf
-*	**Password:** Tim3t0change
+*	**Password:** `Tim3t0change`
 
 ![cf 2](/images/blueprint/pic-bp02.png)
 

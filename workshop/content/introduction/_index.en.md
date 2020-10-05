@@ -15,3 +15,5 @@ service industry, like marketing and communications, customer history or demogra
 dimension.
 
 ![cust_360_dimensions](/images/intro/cust_360_dimensions.png)
+
+In this workshop you will use different sources of data to build a 360-degree Customer view using powerful AWS tools for analytics.

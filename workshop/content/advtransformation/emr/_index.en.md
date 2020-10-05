@@ -25,16 +25,18 @@ Amazon EMR is a powerful cluster, that you can set with few machines like in thi
 ![bp 1](/images/emr/pic-em03.png)
 
 **Step 4:** Add step.
+
 *	**Step type:** Spark application
 *	**Name:** denormalization
 *	**Deploy mode:** Cluster
 *	**Spark-submit option:** leave blank
-*	**Application location:** s3://**<your_stage_bucket>**/library/c360_analytics.py
+*	**Application location:** s3://`**your_stage_bucket**`/library/c360_analytics.py
+
 Use the bucket browser to select the application location.
 
-![bp 1](pic-em04.png)
+![bp 1](/images/emr/pic-em04.png)
 
-*	**Arguments:** --BucketName <your analytics bucket>
+*	**Arguments:** `--BucketName` `s3://**your analytics bucket**`
 Pick the name from Amazon S3 console
 *Leave a space between --BucketName and your bucket name.*
 
@@ -49,6 +51,14 @@ After completion the job has created a denormalized table using PySpark.
 
 ![bp 1](/images/emr/pic-em07.png)
 
-**Step 6:** go to [Athena console](https://us-west-2.console.aws.amazon.com/athena/home?region=us-west-2#query) and check the new c360denormalized table on c360view_analytics database.
+**Step 6:** go to [Lake formation console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#tables) select the `c360denormalized` table from `c360view_analytic` databases.
+
+![bp 1](/images/emr/pic-em09.png)
+
+**Step 7:** Grant access to it to your `user` or `role`.
+
+![bp 1](/images/emr/pic-em10.png)
+
+**Step 8:** go to [Athena console](https://us-west-2.console.aws.amazon.com/athena/home?region=us-west-2#query) and check the new c360denormalized table on c360view_analytics database.
 
 ![bp 1](/images/emr/pic-em08.png)
