@@ -3,7 +3,7 @@ CanonifyURLs=true
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Getting Started with Amazon DocumentDB"
+title = "Build a 360 degree customer view"
 theme = "learn"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
@@ -14,8 +14,8 @@ pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 
 [params]
-  description = "Labs for Amazon DocumentDB Immersion Day"
-  author = "Karthik Vijayraghavan"
+  description = "Build a 360 degree customer view"
+  author = "Hugo Rozestraten"
   disableBreadcrumb = false
   disableNextPrev = false
   themeVariant = "aws"
@@ -40,6 +40,6 @@ hrefTargetBlank = true
 
 [Languages]
 [Languages.en]
-title = "Getting Started with Amazon DocumentDB"
+title = "Build a 360 degree customer view"
 weight = 1
 languageName = "English"

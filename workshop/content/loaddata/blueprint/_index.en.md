@@ -7,7 +7,7 @@ chapter = true
 pre = "<b>2.3 </b>"
 +++
 
-## Create a connection for relational database as source.
+Create a connection for relational database as source.
 
 
 **Step 1:** Go to [AWS Glue Database Connections](https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=connections), and Add connection.
@@ -67,5 +67,3 @@ Edit your connection again and change the Subnet to another one.
 ![cf 9](/images/blueprint/pic-bp09.png)
 
 Then test the connection with the new chosen subnet until it works.
-
-## Setup [Execute a crawler at AWS Glue Console to get tables definitions from your raw bucket](../crawler/README.md)

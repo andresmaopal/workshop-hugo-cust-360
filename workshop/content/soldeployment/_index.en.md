@@ -7,8 +7,8 @@ chapter = true
 pre = "<b>1. </b>"
 +++
 
-## Solution deployment with AWS CloudFormation - AWS Account required
+Solution deployment with AWS CloudFormation - AWS Account required
 
-### Create required Resources, key pair and VPC endpoint.
+Create required Resources, key pair and VPC endpoint.
 
-### Deploy Clouformation
+Deploy Clouformation

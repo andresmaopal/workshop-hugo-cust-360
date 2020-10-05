@@ -15,10 +15,3 @@ service industry, like marketing and communications, customer history or demogra
 dimension.
 
 ![cust_360_dimensions](/images/intro/cust_360_dimensions.png)
-
-
-
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.

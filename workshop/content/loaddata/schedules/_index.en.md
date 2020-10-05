@@ -7,7 +7,7 @@ chapter = true
 pre = "<b>2.1 </b>"
 +++
 
-## Activate the schedulers to generate data from different sources
+Activate the schedulers to generate data from different sources
 
 
 **Step 1:** Go to [CloudWatch Events -> Rules](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#cw:dashboard=Home), and enable each of the c360v-Schedule.
@@ -25,7 +25,7 @@ pre = "<b>2.1 </b>"
 ![cf 2](/images/schedules/pic-cw02.png)
 
 
-## Verify the data created by the Lambda functions.
+Verify the data created by the Lambda functions.
 
 Amazon S3 is the central service of Data Lake architecture in AWS. In our solution we are using Lambda functions to pick external data such as BigQuery from GA (Google Analytics)  source: https://www.kaggle.com/bigquery/google-analytics-sample tables and also generate several other synthetic data for other data sets.
 The original AWS Lambda code used to extract BigQuery data is the following.

@@ -13,7 +13,3 @@ In this blog we will explore a hypothetic financial services company, as there a
 common dimensions for this industry and some dimensions that are also valid for any
 service industry, like marketing and communications, customer history or demographic
 dimension.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
