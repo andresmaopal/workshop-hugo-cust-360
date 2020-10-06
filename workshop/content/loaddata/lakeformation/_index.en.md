@@ -73,12 +73,12 @@ You will see these grants for locations.
 ![cf 10](/images/lakeformation/pic-lf10.png)
 
 
-Go to [Admins and database creators](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#catalog-settings).
+**Step 8:** Go to [Admins and database creators](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#catalog-settings).
 
 
 ![cf 11](/images/lakeformation/pic-lf11.png)
 
-**Step 8:** Grant `database creator` to the following roles:
+**Step 9:** Grant `database creator` to the following roles:
 
 - Glue-role-c360view
 

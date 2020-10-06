@@ -51,7 +51,7 @@ After completion the job has created a denormalized table using PySpark.
 
 ![bp 1](/images/emr/pic-em07.png)
 
-**Step 6:** go to [Lake formation console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#tables) select the `c360denormalized` table from `c360view_analytic` databases.
+**Step 6:** go to [Lake formation console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#tables) select the `c360denormalized` table from `c360view_analytics` databases.
 
 ![bp 1](/images/emr/pic-em09.png)
 
