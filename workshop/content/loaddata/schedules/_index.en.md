@@ -10,7 +10,7 @@ pre = "<b>2.1 </b>"
 Activate the schedulers to generate data from different sources
 
 
-**Step 1:** Go to [CloudWatch Events -> Rules](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#cw:dashboard=Home), and enable each of the c360v-Schedule.
+**Step 1:** Go to [CloudWatch Events -> Rules](https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#rules:), and enable each of the c360v-Schedule.
 
 ![cw 0](/images/schedules/pic-cw0.png)
 
@@ -25,10 +25,9 @@ Activate the schedulers to generate data from different sources
 ![cf 2](/images/schedules/pic-cw02.png)
 
 
-Verify the data created by the Lambda functions.
 
 Amazon S3 is the central service of Data Lake architecture in AWS. In our solution we are using Lambda functions to pick external data such as BigQuery from GA (Google Analytics)  source: https://www.kaggle.com/bigquery/google-analytics-sample tables and also generate several other synthetic data for other data sets.
-The original AWS Lambda code used to extract BigQuery data is the following.
+The original AWS Lambda code used to extract BigQuery data is the following, but you now can use [Amazon Appflow](https://aws.amazon.com/appflow/) with your own GA accunt.
 
 ```python
 python
@@ -62,6 +61,8 @@ def lambda_handler(event, context):
 
 If you want to this code you have to install the the gcloud python sdk libraries directory and generate a bqfile.json with your gcloud service account credentials, then zip the library directory, bqfile.json, and your lambda.py to deploy it to AWS Lambda functions.
 Set three environments variables to use it or call table, path_to and bucket.
+
+#### Verify the data created by the Lambda functions.
 
 
 **Step 1:** Go to [Amazon S3](https://s3.console.aws.amazon.com/s3/home?region=us-west-2) console to check the data in your raw bucket.
