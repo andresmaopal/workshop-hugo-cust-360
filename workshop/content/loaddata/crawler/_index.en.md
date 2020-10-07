@@ -16,7 +16,7 @@ Execute a crawler at AWS Glue Console to get tables definitions from your raw bu
 
 
 
-**Step 2:** Click on the Crawler360rawdata and Run crawler.
+**Step 2:** Click on the `Crawler360rawdata` and Run crawler.
 
 *	•	This crawler will read your raw bucket files and create table definitions for each of the table schema for database c360view-raw.
 
@@ -35,7 +35,7 @@ Execute a crawler at AWS Glue Console to get tables definitions from your raw bu
 
 ![cf 5](/images/crawler/pic-cw04.png)
 
-**Step 5:** Select Crawlerc360visitorid and run crawler.
+**Step 5:** Select `Crawlerc360visitorid` and run crawler.
 
 ![cf 5](/images/crawler/pic-cw05.png)
 
