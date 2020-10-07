@@ -54,8 +54,15 @@ After registration you will see a screen like the following.
 
 ![cf 6](/images/lakeformation/pic-lf06.png)
 
+*	IAM users and roles: **c360-LambdaExecutionRole**
+#### Storage locations:
+  *	c360view-us-west-2-<your_account_id>-raw
+  *	c360view-us-west-2-<your_account_id>-stage
+  *	c360view-us-west-2-<your_account_id>-analytics
 
-**Step 7:** Grant the locations to **Glue-role-c360view**.
+![cf 7](/images/lakeformation/pic-lf07.png)
+
+**Step 7:** Grant same locations to **Glue-role-c360view**.
 
 *	IAM users and roles: **Glue-role-c360view**
 
@@ -66,6 +73,17 @@ After registration you will see a screen like the following.
 
 ![cf 8](/images/lakeformation/pic-lf08.png)
 
+**Step 8:** Grant same locations to **c360view-emrEc2Role
+
+*	IAM users and roles: **c360view-emrEc2Role**.
+
+#### Storage locations:
+*	c360view-us-west-2-<your_account_id>-raw
+*	c360view-us-west-2-<your_account_id>-stage
+*	c360view-us-west-2-<your_account_id>-analytics
+
+![cf 9](/images/lakeformation/pic-lf09.png)
+
 
 You will see these grants for locations.
 
@@ -73,7 +91,7 @@ You will see these grants for locations.
 ![cf 10](/images/lakeformation/pic-lf10.png)
 
 
-**Step 8:** Go to [Admins and database creators](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#catalog-settings).
+Go to [Admins and database creators](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#catalog-settings).
 
 
 ![cf 11](/images/lakeformation/pic-lf11.png)
@@ -81,6 +99,7 @@ You will see these grants for locations.
 **Step 9:** Grant `database creator` to the following roles:
 
 - Glue-role-c360view
+- c360view-emrEc2Role
 
 ![cf 12](/images/lakeformation/pic-lf12.png)
 

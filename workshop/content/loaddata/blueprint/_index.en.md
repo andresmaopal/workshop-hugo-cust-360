@@ -43,9 +43,7 @@ Create a connection for relational database as source.
 ![cf 4](/images/blueprint/pic-bp04.png)
 
 **Step 5:** Check the c360view-c360-Access and c360view-RDS-Source security group:
-
-* **Group name:** c360view-c360-Access
-and c360view-RDS-Source
+* **Group name:** c360view-c360-Access and c360view-RDS-Source
 * **Password:** Tim3t0change (re-enter it)
 
 ![cf 5](/images/blueprint/pic-bp05.png)
