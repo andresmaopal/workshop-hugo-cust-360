@@ -25,11 +25,9 @@ We are going to use a Hive script to perform the query on source table and save 
 ![bp 1](/images/ddb/pic-ddb03.png)
 
 **Step 4:** Add step.
-
 *	**Step type:** Hive program
 *	**Name:** loadtodynamodb
-*	**Script S3 location:** s3://`**your_stage_bucket**`/library/c360dynamodbload.q
-
+*	**Script S3 location:** s3://<your_stage_bucket>/ library/c360dynamodbload.q
 Use the bucket browser to select the application location.
 
 

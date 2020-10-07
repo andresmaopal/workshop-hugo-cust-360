@@ -2,14 +2,14 @@
 title = "Edit Schema from Blueprint"
 menuTitle = "Edit Schema"
 date = 2020-08-28T08:56:14-05:00
-weight = 30
+weight = 20
 chapter = true
-pre = "<b>3.3 </b>"
+pre = "<b>3.5 </b>"
 +++
 
 Let’s go back to the Lake formation workflow that extracts data from our relational database, to see it has finished.
 
-Go to [Lake Formation Workflows Blueprints](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#workflows), wait to see your workflow COMPLETED.
+Go to Lake Formation Workflows Blueprints, wait to see your workflow COMPLETED.
 
 ![bp 0](/images/lfworkflow/pic-wf00.png)
 
@@ -28,7 +28,7 @@ For your ongoing database changes, you can create an Incremental Workflow and us
 
 
 
-**Step 3:** Go to [AWS Glue and see the table definition](https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#table:name=sourcemf_sourcemf_public_transactions;namespace=c360view_raw) that was created with the full load and incremental data.
+**Step 3:** Go to AWS Glue and see the table definition that was created with the full load and incremental data.
 
 ![bp 1](/images/lfworkflow/pic-wf03.png)
 

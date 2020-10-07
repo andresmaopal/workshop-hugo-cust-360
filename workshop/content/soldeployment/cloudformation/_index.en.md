@@ -33,10 +33,10 @@ Deploy CloudFormation template to create basic infrastructure
 ![cf 2](/images/cloudformation/pic-cf2.png)
 
 
-**Step 4:** Choose Next. No need to change anything on **Configure stack options**, click Next again.
+**Step 4:** Choose Next for the next window.
 
 
-**Step 5:** Scroll down to find a check box and mark the “I acknowledge that AWS CloudFormation might create IAM resources.”  and Create stack.
+**Step 5:** Check the “I acknowledge that AWS CloudFormation might create IAM resources.”  and Create stack.
 
 ![cf 3](/images/cloudformation/pic-cf3.png)
 
@@ -75,4 +75,5 @@ The template has created the following resources to optimize your time.
 
 Check the status of each resource, and order by resource status.
 
-After you see "CREATE_COMPLETE" for the stack all resources are ready and you can proceed to next step `Load Data`.
+
+If the resource Type “AWS::RDS::DBInstance” and “AWS::EMR::Cluster” are the only with status CREATE_IN_PROGRESS, and all the others are CREATE_COMPLETE you can continue the execution.
