@@ -9,6 +9,14 @@ pre = "<b>2.3 </b>"
 
 Create a connection for relational database as source.
 
+You will use Lake Formation Blueprints for this purpose. Lake Formation Blueprints provides the following types of workflows to execute common ETL use:
+
+*	**Database snapshot** – Loads or reloads data from all tables into the data lake from a JDBC source.
+
+*	**Incremental database** – Loads only new data into the data lake from a JDBC source, based on previously set bookmarks
+
+we are going to use a snapshot ingestion for this exercise.
+
 
 **Step 1:** Go to [AWS Glue Database Connections](https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=connections), and Add connection.
 
