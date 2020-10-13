@@ -10,6 +10,11 @@ pre = "<b>2.4 </b>"
 Execute a crawler at AWS Glue Console to get tables definitions from your raw bucket.
 
 
+A crawler accesses your data store, extracts metadata, and creates table definitions in the AWS Glue Data Catalog. The Crawlers pane in the AWS Glue console lists all the crawlers that you create. The list displays status and metrics from the last run of your crawler.
+
+![bp 0](/images/crawler/palacan-pic-cw00.png)
+
+
 **Step 1:** Go to AWS [Glue Crawlers](https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#catalog:tab=crawlers):
 
 ![bp 0](/images/crawler/pic-cw00.png)
