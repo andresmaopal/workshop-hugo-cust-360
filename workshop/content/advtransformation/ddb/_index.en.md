@@ -9,6 +9,12 @@ pre = "<b>4.4 </b>"
 
 Populate an Amazon DynamoDB table with the results to be the source for low latency queries from your applications or APIs.
 
+
+Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It's a fully managed, multiregion, multimaster, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications. DynamoDB can handle more than 10 trillion requests per day and can support peaks of more than 20 million requests per second.
+
+
+![bp 0](/images/ddb/palacan-pic-ddb00.png)
+
 We are going to use a Hive script to perform the query on source table and save it DynamoDB.
 
 **Step 1:** Go to [EMR console](https://us-west-2.console.aws.amazon.com/elasticmapreduce/home?region=us-west-2).
