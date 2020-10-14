@@ -45,26 +45,33 @@ we are going to use a snapshot ingestion for this exercise.
 
 ![cf 3](/images/blueprint/pic-bp03.png)
 
+Use refresh button to see your connection.
 
 **Step 4:** Edit your connection to Add a Security group to your connection:
 
 ![cf 4](/images/blueprint/pic-bp04.png)
 
-**Step 5:** Check the c360view-c360-Access and c360view-RDS-Source security group:
+**Step 5:** Click next.
+
+![cf 4hhu](/images/blueprint/pic-bp04-hhug.png)
+
+**Step 6:** In the Security groups section check the **c360view-c360-Access** and **c360view-RDS-Source** security group:
 
 * **Group name:** c360view-c360-Access
 and c360view-RDS-Source
-* **Password:** Tim3t0change (re-enter it)
+* **Password:** `Tim3t0change` (re-enter it)
 
 ![cf 5](/images/blueprint/pic-bp05.png)
 
-**Step 6:** Test your connection:
+Next -> Finish.
+
+**Step 7:** Test your connection:
 *	**IAM role:** Glue-role-c360view
 
 ![cf 6](/images/blueprint/pic-bp06.png)
 
 
-**Step 7:** You will see sourcemf connected successfully:
+**Step 8:** You will see sourcemf connected successfully:
 
 ![cf 7](/images/blueprint/pic-bp07.png)
 
@@ -72,7 +79,7 @@ If you receive the following error:
 
 ![cf 8](/images/blueprint/pic-bp08.png)
 
-Edit your connection again and change the Subnet to another one.
+Edit your connection again and change the Subnet to another one, from the same VPC.
 
 ![cf 9](/images/blueprint/pic-bp09.png)
 

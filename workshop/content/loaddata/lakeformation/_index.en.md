@@ -19,7 +19,7 @@ If you have a Get Started screen, click on Get Started.
 If are now on Lake Formation console go to Permissions -> **Admins and database creators**, and grant your user as administrator.
 
 
-**Step 2:** Add your **user** or the **role** you are using as Data Lake admin, so your user can administer storage areas, databases and tables.
+**Step 2:** Add the **user** or the **role** (if you used an assume role to log in) you are using as Data Lake admin, so your user can administer storage areas, databases and tables.
 
 ![cf 1](/images/lakeformation/pic-lf01.png)
 
@@ -41,9 +41,9 @@ Add your user as Administrator and Save
 
 Repeat it for the 3 buckets:
 
-*	c360view-us-west-2-<your_account_id>-raw
-*	c360view-us-west-2-<your_account_id>-stage
-*	c360view-us-west-2-<your_account_id>-analytics
+*	c360view-us-west-2-*your_account_id*-raw
+*	c360view-us-west-2-*your_account_id*-stage
+*	c360view-us-west-2-*your_account_id*-analytics
 
 After registration you will see a screen like the following.
 
@@ -59,10 +59,11 @@ After registration you will see a screen like the following.
 
 *	IAM users and roles: **Glue-role-c360view**
 
-#### Storage locations:
-  *	c360view-us-west-2-<your_account_id>-raw
-  *	c360view-us-west-2-<your_account_id>-stage
-  *	c360view-us-west-2-<your_account_id>-analytics
+Storage locations:
+
+  *	c360view-us-west-2-*your_account_id*-raw
+  *	c360view-us-west-2-*your_account_id*-stage
+  *	c360view-us-west-2-*your_account_id*-analytics
 
 ![cf 8](/images/lakeformation/pic-lf08.png)
 

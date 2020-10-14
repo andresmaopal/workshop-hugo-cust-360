@@ -15,12 +15,12 @@ Your CloudFormation template has created 3 different transformation jobs based o
 
 - A second one to transform other RAW data tables into parquet, partitioned tables;
 
-- And a last one to process and a third one to parse data from relational database raw data.
+- And the last one to parse data from relational database raw data.
 
 
 Check in your AWS Step Functions [State machine console](https://us-west-2.console.aws.amazon.com/states/home?region=us-west-2#/statemachines).
 
-**Step 1:** Click first the GA transformation “MyStateMachineGA-<hash>”.
+**Step 1:** Click first the GA transformation “MyStateMachineGA-hash” link.
 
 ![bp 0](/images/transformation/pic-tr00.png)
 
@@ -61,7 +61,7 @@ You can check in the “query” field of “Payload” in each task, what are t
 
 Perform the transformation from CSV format to parquet format for the tables gbank (general banking), account and card, and from Json format to parquet format for the customer (CRM) table.
 
-**Step 1:** Click the parallel transformation “MyStateMachineToParquet-<hash>”, and start execution.
+**Step 1:** Click the parallel transformation “MyStateMachineToParquet-hash”, and start execution.
 
 ![bp 0](/images/transformation/pic-tr06.png)
 

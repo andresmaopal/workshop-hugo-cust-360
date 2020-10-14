@@ -9,13 +9,15 @@ pre = "<b>5. </b>"
 
 Query Amazon DynamoDB table with the results to be the source for low latency queries from your applications or APIs.
 
+![adv trans](/images/intro/hhug-adv-ddb.png)
+
 
 **Step 1:** Go to [Amazon DynamoDB console](https://us-west-2.console.aws.amazon.com/dynamodb/home?region=us-west-2#tables:selected=DDBc360view;tab=items).
 
 ![bp 1](/images/viewddb/pic-ddb01.png)
 
 
-**Step 2:** Click on the table DDBc360view that you have populated with a Hive script using yor EMR cluster.
+**Step 2:** Click on the table DDBc360view that you have populated with a Hive script using yor EMR cluster, and click on tab Items.
 
 ![bp 1](/images/viewddb/pic-ddb02.png)
 
@@ -81,6 +83,6 @@ You can also check the lambda functions code on AWS Lambda console by click in a
 ![bp 1](/images/viewddb/pic-ddb14.png)
 
 
-For Data scientists and business users, you can also use Amazon Sagemaker and Amazon Quicksight to explore the data using Athena. Find more details on the links for creating data set from Athena on Quicksight and run SQL queries in Sagemaker.
+For Data scientists and business users, you can also use [Amazon Sagemaker](https://aws.amazon.com/sagemaker/?nc1=h_ls) and [Amazon Quicksight](https://aws.amazon.com/quicksight/?nc1=h_ls) to explore the data using Athena. Find more details on the links for [creating data set from Athena on Quicksight](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-athena.html) and [Run SQL queries from your Sagemaker notebooks using Amazon Athena](https://aws.amazon.com/blogs/machine-learning/run-sql-queries-from-your-sagemaker-notebooks-using-amazon-athena/).
 
 Important, after playing with the environment disable or delete all the CloudWatch schedules created to avoid creating new data, empty your c360view S3 buckets and go to CloudFormation console to delete the whole c360view stack, that will delete your transactional database RDS, EMR cluster and all the other resources.

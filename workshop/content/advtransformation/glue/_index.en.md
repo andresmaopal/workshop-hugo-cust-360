@@ -26,7 +26,7 @@ Run the Glue crawler Crawler360jobtables3m, Crawler360jobtables6m to pick up def
 ![bp 1](/images/glue/pic-gl03.png)
 
 
-**Step 5:** Check the tables, you can filter by Database at search bar for c360view_stage.
-We have now 14 tables in the c360view_stage database.
+**Step 5:** Go to Glue Databases -> tables, check the tables you have, you can filter by Database at search bar for `c360view_stage`.
+We have now 14 tables in the `c360view_stage` database.
 
 ![bp 1](/images/glue/pic-gl04.png)

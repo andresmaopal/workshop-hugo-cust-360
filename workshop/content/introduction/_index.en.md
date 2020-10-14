@@ -15,6 +15,17 @@ dimension.
 
 ![cust_360_dimensions](/images/intro/cust_360_dimensions.png)
 
+
+Workshop architecture diagram:
+![cust_360_diagram](/images/intro/hhug_intro.png)
+
+We use AWS Lake Formation blue prints to orchestrate the extraction from the relational database to Amazon S3, using AWS Glue connector and Glue jobs.
+Then on the bottom we have the persistent layer on Amazon S3 the base for our Data lake strategy, with Raw, Stage and Analytics buckets.
+
+For processing we are counting with Step Functions orchestrating AWS Lambda using Athena on the top, we also have AWS Glue Jobs, using Spark and Python, and Amazon EMR using Spark and Hive to transform and aggregate data.
+
+To consume the data, we have Amazon Athena query engine console and API, and Amazon DynamoDB console and API.
+
 In this workshop you will use different sources of data to build a 360-degree Customer view using powerful AWS tools for analytics.
 
 
@@ -68,13 +79,3 @@ In this workshop you will use different sources of data to build a 360-degree Cu
 |   |   |    |userId
 |WebVisitor map	|Map web visitors to client_id	|Text file	|visitorId hash
 |   |   |    |client_id
-
-Follows the workshop architecture diagram
-![cust_360_diagram](/images/intro/hhug_intro.png)
-
-We use AWS Lake Formation blue prints to orchestrate the extraction from the relational database to Amazon S3, using AWS Glue connector and Glue jobs.
-Then on the bottom we have the persistent layer on Amazon S3 the base for our Data lake strategy, with Raw, Stage and Analytics buckets.
-
-For processing we are counting with Step Functions orchestrating AWS Lambda using Athena on the top, we also have AWS Glue Jobs, using Spark and Python, and Amazon EMR using Spark and Hive to transform and aggregate data.
-
-To consume the data, we have Amazon Athena query engine console and API, and Amazon DynamoDB console and API.

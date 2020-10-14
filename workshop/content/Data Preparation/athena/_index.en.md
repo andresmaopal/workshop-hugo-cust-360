@@ -26,14 +26,14 @@ Repeat the process for the following tables:
 - account
 - card
 - crm
-- database
+- data
 - gbank
 - sourcemf_sourcemf_public_transactions
 
 - visitors
 
 
-**Step 3:** Go to [Amazon S3](https://s3.console.aws.amazon.com/s3/home?region=us-west-2) console and copy your c360view-us-west-2-<account id>-stage bucket name.
+**Step 3:** Go to [Amazon S3](https://s3.console.aws.amazon.com/s3/home?region=us-west-2) console and copy your c360view-us-west-2-*account id*-stage bucket name.
 
 ![bp 0](/images/athena/pic-at00.png)
 
@@ -57,7 +57,7 @@ Type s3://< your_stage_bucket_name >/athena-results/ as location path.
 
 ![bp 0](/images/athena/pic-at03.png)
 
-**Step 8:** Choose c360view_raw to check the raw tables.
+**Step 8:** Choose `c360view_raw` to check the raw tables.
 
 ![bp 0](/images/athena/pic-at04.png)
 
@@ -75,6 +75,6 @@ You can edit this on AWS Glue, but our jobs to processed the data in Step Functi
 
 If you go to c360view_stage database you will find a different scenario.
 
-**Step 11:** Check the other tables data and then go to the c360view_stage database.
+**Step 11:** Check the other tables data and then go to the `c360view_stage` database.
 
 ![bp 0](/images/athena/pic-at07.png)

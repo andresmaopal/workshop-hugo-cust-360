@@ -7,9 +7,9 @@ chapter = true
 pre = "<b>4.3 </b>"
 +++
 
-To create a denormalized table we are going to run a job on Amazon EMR.
+To create a denormalized table we are going to run a job on [Amazon EMR](https://aws.amazon.com/emr/?nc1=h_ls).
 
-Amazon EMR is a powerful cluster, that you can set with few machines like in this blog or tens to thousands of machines. Consider using spot instances for batch processing and terminate your clusters when you are not using, storing your job results on Amazon S3.
+Amazon EMR is a powerful cluster, that you can set with few machines like in this blog or tens to thousands of machines. Consider using [spot instances](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html) for batch processing and terminate your clusters when you are not using, always store your job results on Amazon S3.
 
 **Step 1:** Go to [EMR console](https://us-west-2.console.aws.amazon.com/elasticmapreduce/home?region=us-west-2).
 
@@ -36,9 +36,9 @@ Use the bucket browser to select the application location.
 
 ![bp 1](/images/emr/pic-em04.png)
 
-*	**Arguments:** `--BucketName` `s3://**your analytics bucket**`
+*	**Arguments:** `--BucketName` `**your analytics bucket**`
 Pick the name from Amazon S3 console
-*Leave a space between --BucketName and your bucket name.*
+*Leave a space between `--BucketName` and your bucket name*,  without s3://.
 
 ![bp 1](/images/emr/pic-em05.png)
 

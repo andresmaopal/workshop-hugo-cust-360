@@ -40,9 +40,9 @@ Go to [Lake Formation Workflows Blueprints](https://us-west-2.console.aws.amazon
 
 *	**Frequency:** run on demand
 
-*	**Workflow name:** sourcemf_full_workflow
+*	**Workflow name:** `sourcemf_full_workflow`
 *	**IAM role:** Glue-role-c360view
-*	**Table Prefix:** sourcemf
+*	**Table Prefix:** `sourcemf`
 
 ![bp 1](/images/workflow/pic-wf05.png)
 

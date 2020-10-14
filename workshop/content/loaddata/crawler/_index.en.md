@@ -20,6 +20,7 @@ A crawler accesses your data store, extracts metadata, and creates table definit
 ![bp 0](/images/crawler/pic-cw00.png)
 
 
+**Create databases and table definitions with Glue Crawler**
 
 **Step 2:** Click on the Crawler360rawdata and Run crawler.
 
@@ -28,23 +29,23 @@ A crawler accesses your data store, extracts metadata, and creates table definit
 
 ![bp 1](/images/crawler/pic-cw01.png)
 
+**Step 3:** Select Crawlerc360visitorid and run crawler.
 
+![cf 5](/images/crawler/pic-cw05.png)
 
-**Step 3:** You should see 5 tables added by Crawler.
+**Step 4:** You should see 5 tables added by Crawler360rawdata Crawler.
 
 ![cf 2](/images/crawler/pic-cw02.png)
 
+You should see **one table** added by the Crawlerc360visitorid crawler.
+
+![cf 5](/images/crawler/pic-cw06.png)
 
 
 **Step 4:** You can verify them going to Database -> Tables in the same console.
 
 ![cf 5](/images/crawler/pic-cw04.png)
 
-**Step 5:** Select Crawlerc360visitorid and run crawler.
-
-![cf 5](/images/crawler/pic-cw05.png)
-
-
-You should see **one table** added by the crawler.
-
-![cf 5](/images/crawler/pic-cw06.png)
+{{% notice note %}}
+Glue Crawler created *c360view_raw* and *c360view_stage* databases and the 6 table definitions.
+{{% /notice %}}
