@@ -69,7 +69,7 @@ You can enter in the pk of the desired client and see the whole profile.
 
 The use case for this Amazon DynamoDB table is to have fast access to data when you need to interact directly with your customer. Examples of use cases are mobile branch manager applications, or contact center applications, in order to check the profile of a customer, or even other dimensions you decide to increment here, as in the scenario of next best offer.
 
-There are several examples to expose a DynamoDB table with an API, using Amazon API Gateway, as in this blog. But if your application resides inside your AWS account, you probably may use calls directly to DynamoDB SDK and API.
+There are several examples to expose a DynamoDB table with an API, using Amazon API Gateway, as in this Workshop. But if your application resides inside your AWS account, you probably may use calls directly to DynamoDB SDK and API.
 
 
 If you want to check other codes used in this workshop go to your stage bucket in S3, in the "library" folder.
@@ -83,4 +83,4 @@ You can also check the lambda functions code on AWS Lambda console by clicking i
 ![bp 1](/images/viewddb/pic-ddb14.png)
 
 
-For Data scientists and business users, you can also use [Amazon Sagemaker](https://aws.amazon.com/sagemaker/?nc1=h_ls) and [Amazon Quicksight](https://aws.amazon.com/quicksight/?nc1=h_ls) to explore the data using Athena. Find more details on the links for [creating data set from Athena on Quicksight](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-athena.html) and [Run SQL queries from your Sagemaker notebooks using Amazon Athena](https://aws.amazon.com/blogs/machine-learning/run-sql-queries-from-your-sagemaker-notebooks-using-amazon-athena/).
+For Data scientists and business users, you can also use [Amazon Sagemaker](https://aws.amazon.com/sagemaker/?nc1=h_ls) and [Amazon Quicksight](https://aws.amazon.com/quicksight/?nc1=h_ls) to explore the data using Athena. Find more details on the links for [creating data set from Athena on Quicksight](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-athena.html) and [Run SQL queries from your Sagemaker notebooks using Amazon Athena](https://aws.amazon.com/Workshops/machine-learning/run-sql-queries-from-your-sagemaker-notebooks-using-amazon-athena/).
