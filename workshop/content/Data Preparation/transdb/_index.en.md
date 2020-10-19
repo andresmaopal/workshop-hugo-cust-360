@@ -7,12 +7,12 @@ chapter = true
 pre = "<b>3.4 </b>"
 +++
 
-Perform transformation with relational database source raw tables and to have it transformed to parquet files.
+Perform transformation with relational database source raw tables and to have them transformed into parquet files.
 
 Check in your step functions [State machine console](https://us-west-2.console.aws.amazon.com/states/home?region=us-west-2#/statemachines).
 
 
-**Step 1:** Click on the like of relational database transformation “MyStateMachineRelationalDB-hash”.
+**Step 1:** Click on the link of relational database transformation “MyStateMachineRelationalDB-hash”.
 
 
 ![bp 0](/images/transdb/pic-td01.png)

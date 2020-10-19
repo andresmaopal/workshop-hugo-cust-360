@@ -43,7 +43,7 @@ For your ongoing database changes, you can create an Incremental Workflow and us
 ![bp 1](/images/lfworkflow/pic-wf05.png)
 
 
-**Step 6:** Select string for date column type. Because the timestamp format is not ok and has to be fixed with a job.
+**Step 6:** Select `string` for **date** column type, since the `timestamp` needs to be changed with a job.
 
 ![bp 1](/images/lfworkflow/pic-wf06.png)
 

@@ -7,7 +7,7 @@ chapter = true
 pre = "<b>3.1 </b>"
 +++
 
-Perform transformation with source raw tables and to have it flatten and transformed to parquet files.
+Perform transformation with source raw tables in order to have them flattened and transformed to parquet files.
 
 Your CloudFormation template has created 3 different transformation jobs based on AWS Step Functions, AWS Lambda Functions and Amazon Athena.
 
@@ -20,7 +20,7 @@ Your CloudFormation template has created 3 different transformation jobs based o
 
 Check in your AWS Step Functions [State machine console](https://us-west-2.console.aws.amazon.com/states/home?region=us-west-2#/statemachines).
 
-**Step 1:** Click first the GA transformation “MyStateMachineGA-hash” link.
+**Step 1:** Click first on the GA transformation “MyStateMachineGA-hash” link.
 
 ![bp 0](/images/transformation/pic-tr00.png)
 
@@ -41,7 +41,7 @@ Check in your AWS Step Functions [State machine console](https://us-west-2.conso
 ![bp 0](/images/transformation/pic-tr03.png)
 
 
-In this step functions state machine, we are performing transformation for GA tables. GA schema has nested fields that are being flatten using CROSS JOIN UNNEST functions and qualifying nested struct and array data types.
+In this step functions state machine, we are performing transformation for GA tables. GA schema has nested fields that are being flattened using CROSS JOIN UNNEST functions and qualifying nested struct and array data types.
 
 *	This state machine uses one lambda function to execute the transformation using Amazon Athena query execution.
 *	Another lambda function is used to check the termination of the previous query, and then wait or go to next transformation steps.
@@ -61,7 +61,7 @@ You can check in the “query” field of “Payload” in each task, what are t
 
 Perform the transformation from CSV format to parquet format for the tables gbank (general banking), account and card, and from Json format to parquet format for the customer (CRM) table.
 
-**Step 1:** Click the parallel transformation “MyStateMachineToParquet-hash”, and start execution.
+**Step 1:** Click on the parallel transformation “MyStateMachineToParquet-hash”, and start execution.
 
 ![bp 0](/images/transformation/pic-tr06.png)
 
@@ -70,8 +70,11 @@ Perform the transformation from CSV format to parquet format for the tables gban
 ![bp 0](/images/transformation/pic-tr07.png)
 
 
-**Step 3:** Verify the workflow to see that in this case we are performing 4 transformation in parallel, you can also edit it to check the queries performed using a Lambda function to execute query in Amazon Athena.
+**Step 3:** Verify the workflow to see that in this case we are performing 4 transformations in parallel, you can also edit it to check the queries performed using a Lambda function to execute them in Amazon Athena.
 
 Refresh your browser to check for completion.
 
 ![bp 0](/images/transformation/pic-tr08.png)
+
+
+The Step function *"MyStateMachineRelationalDB-hash"* will be run later.

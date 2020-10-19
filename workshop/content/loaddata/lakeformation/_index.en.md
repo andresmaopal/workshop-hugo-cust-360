@@ -14,9 +14,11 @@ pre = "<b>2.2 </b>"
 
 ![lf 0](/images/lakeformation/pic-lf00.png)
 
+If you are prompted to "Welcome to Lake Formation" window, click on *Add Administrators* and add the `user` or `role` your are using to access this account, as Lake Formation admin.  
+
 If you have a Get Started screen, click on Get Started.
 
-If are now on Lake Formation console go to Permissions -> **Admins and database creators**, and grant your user as administrator.
+On Lake Formation console go to Permissions -> **Admins and database creators**, and grant your user as administrator.
 
 
 **Step 2:** Add the **user** or the **role** (if you used an assume role to log in) you are using as Data Lake admin, so your user can administer storage areas, databases and tables.
@@ -35,7 +37,7 @@ Add your user as Administrator and Save
 ![cf 3](/images/lakeformation/pic-lf03.png)
 
 
-**Step 5:** Click on Browse and select each c360view bucket to register.
+**Step 5:** Click on Browse and select each c360view bucket to register. Leave everything else as default and click on *Register Location.*
 
 ![cf 4](/images/lakeformation/pic-lf04.png)
 
@@ -50,12 +52,12 @@ After registration you will see a screen like the following.
 ![cf 5](/images/lakeformation/pic-lf05.png)
 
 
-**Step 6:** On [Lake Formation data locations permission console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#location-permissions) Click on Grant to grant access to the AWS Lambda, AWS Glue service role and Amazon EMR EC2 role.
+**Step 6:** On [Lake Formation data locations permission console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#location-permissions) Click on Grant to grant access to Glue-role-c360view role.
 
 ![cf 6](/images/lakeformation/pic-lf06.png)
 
 
-**Step 7:** Grant the locations to **Glue-role-c360view**.
+**Step 7:** Click on Grant. To grant access to the locations to **Glue-role-c360view**.
 
 *	IAM users and roles: **Glue-role-c360view**
 
@@ -67,6 +69,7 @@ Storage locations:
 
 ![cf 8](/images/lakeformation/pic-lf08.png)
 
+Click on **Grant**.
 
 You will see these grants for locations.
 
