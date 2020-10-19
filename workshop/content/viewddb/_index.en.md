@@ -67,22 +67,20 @@ Using GSIs we can change the query key by other field we need to find data very 
 
 You can enter in the pk of the desired client and see the whole profile.
 
-The use case for this Amazon DynamoDB table is to have fast access to data when you need to interact directly with your customer for example your mobile branch manager application, or your contact center application to check the profile or even other dimensions you decide to increment here, like next best offer.
+The use case for this Amazon DynamoDB table is to have fast access to data when you need to interact directly with your customer. Examples of use cases are mobile branch manager applications, or contact center applications, in order to check the profile of a customer, or even other dimensions you decide to increment here, as in the scenario of next best offer.
 
-There are several examples to expose a DynamoDB table with an API, using Amazon API Gateway, like this blog, but if your application resides inside your AWS account you probably may use calls directly to DynamoDB SDK and API.
+There are several examples to expose a DynamoDB table with an API, using Amazon API Gateway, as in this blog. But if your application resides inside your AWS account, you probably may use calls directly to DynamoDB SDK and API.
 
 
-If you want to check other codes used go to your stage bucket, library folder.
+If you want to check other codes used in this workshop go to your stage bucket in S3, in the "library" folder.
 
 ![bp 1](/images/viewddb/pic-ddb13.png)
 
 
-You can also check the lambda functions code on AWS Lambda console by click in any of them.
+You can also check the lambda functions code on AWS Lambda console by clicking in any of them.
 
 
 ![bp 1](/images/viewddb/pic-ddb14.png)
 
 
 For Data scientists and business users, you can also use [Amazon Sagemaker](https://aws.amazon.com/sagemaker/?nc1=h_ls) and [Amazon Quicksight](https://aws.amazon.com/quicksight/?nc1=h_ls) to explore the data using Athena. Find more details on the links for [creating data set from Athena on Quicksight](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-athena.html) and [Run SQL queries from your Sagemaker notebooks using Amazon Athena](https://aws.amazon.com/blogs/machine-learning/run-sql-queries-from-your-sagemaker-notebooks-using-amazon-athena/).
-
-Important, after playing with the environment disable or delete all the CloudWatch schedules created to avoid creating new data, empty your c360view S3 buckets and go to CloudFormation console to delete the whole c360view stack, that will delete your transactional database RDS, EMR cluster and all the other resources.

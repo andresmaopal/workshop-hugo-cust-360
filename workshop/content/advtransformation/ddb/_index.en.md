@@ -30,7 +30,7 @@ We are going to use a Hive script to perform the query on source table and save 
 
 ![bp 1](/images/ddb/pic-ddb03.png)
 
-**Step 4:** Add step.
+**Step 4:** Click on *Add step*.
 
 *	**Step type:** Hive program
 *	**Name:** loadtodynamodb
@@ -55,6 +55,6 @@ Use the bucket browser to select the application location.
 ![bp 1](/images/ddb/pic-ddb06.png)
 
 
-**Step 6:** Check all applications status on the Application history tab.
+**Step 6:** Check all applications status on the *Application user interfaces* tab.
 
 ![bp 1](/images/ddb/pic-ddb07.png)

@@ -16,7 +16,7 @@ As a fully managed service, QuickSight lets you easily create and publish intera
 If you don't have Amazon Quicksight account enabled in your AWS Account follow the steps [here](https://docs.aws.amazon.com/quicksight/latest/user/setup-new-quicksight-account.html).
 
 
-**Step 3:** Go to [Quicksight console](https://quicksight.aws.amazon.com/sn/start). You need to us-east-1 N.Virginia for this setup.
+**Step 3:** Go to [Quicksight console](https://quicksight.aws.amazon.com/sn/start). You need go to us-east-1 N.Virginia for this setup.
 
 ![qs2](/images/qs/qs-01.png)
 
@@ -51,7 +51,7 @@ If you use another bucket for Athena results, please add it to your selection.
 {{% /notice  %}}
 
 
-**Step 8:**   Update.
+**Step 8:**  Click on *Update*.
 
 ![qs2](/images/qs/qs-06.png)
 
@@ -59,7 +59,7 @@ If you use another bucket for Athena results, please add it to your selection.
 
 Grant select on databases to your user or role on Quicksight.
 
-**Step 9:** Go to [IAM console](https://console.aws.amazon.com/iam/home?region=us-west-2#/policies) to `Create Policy`.
+**Step 9:** Go to [IAM console](https://console.aws.amazon.com/iam/home?region=us-west-2#/policies) and click on `Create Policy`.
 
 
 Select json tab and paste the following json block.
@@ -78,41 +78,47 @@ Select json tab and paste the following json block.
 
 ![qs2](/images/qs/qs--3.png)
 
-**Step 3:** Create policy:
+Click on Review policy.
+
+**Step 10:** Create policy:
 
 - Name: qslist
 
 
 ![qs2](/images/qs/qs--4.png)
 
+Click on Create policy.
 
 
-
-**Step 4:** Create an [IAM user](https://console.aws.amazon.com/iam/home?region=us-west-2#/users$new?step=details) `qslist` with  Programmatic access only.
+**Step 11:** Create an [IAM user](https://console.aws.amazon.com/iam/home?region=us-west-2#/users$new?step=details) `qslist` with  Programmatic access only.
 
 
 ![qs2](/images/qs/qs--1.png)
 
+Click on Next: permissions.
 
-**Step 5:** Look for `qslist` policy check it and go to Next: Tags.
+
+**Step 12:** In *Set permissions*, select* Attach existing policies directly.*
+
+**Step 13:** Look for `qslist` policy. Check it and go to Next: Tags.
 
 ![qs2](/images/qs/qs--5.png)
 
-**Step 4:** Next: Review.
+**Step 14:** Click on *Next: Review.*
 
-**Step 5:** Create user.
+**Step 15:** Click on *Create user.*
 
 ![qs2](/images/qs/qs--6.png)
 
-**Step 6:** Download.csv file, you will use it to Configure AWS cli.
+**Step 16:** Click on  Download.csv file, as you will use it to Configure AWS cli.
 
 ![qs2](/images/qs/qs--7.png)
 
 
-**Step 7:** Download and install `aws cli` in your machine, follow instructions from [aws cli installation guide.](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
+**Step 17:** Download and install `aws cli` in your machine, follow instructions from [aws cli installation guide.](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 
 
-**Step 8:** Setup credentials to use your cli:
+**Step 18:** Setup credentials to use your cli:
 
 At your machine terminal or windows cmd.
 
@@ -129,12 +135,12 @@ At your machine terminal or windows cmd.
 
 
 
-**Step 9:**  Pick your `<your account id>`.
+**Step 19:**  Pick your `<your account id>`.
 
 
  ![qs2](/images/qs/qs--9.png)
 
-**Step 10:** Find your Quicksight user arn.  
+**Step 20:** Find your Quicksight user arn.  
 
 At your machine terminal or windows cmd, use < your account id > number from above.
 
@@ -149,7 +155,7 @@ At your machine terminal or windows cmd, use < your account id > number from abo
 
 
 
-**Step 11:** Go to [Lake Formation console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#databases).
+**Step 21:** Go to [Lake Formation console](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#databases).
 
 Select `c360view_analytics` database -> Actions -> Grant.
 
@@ -158,70 +164,75 @@ Select `c360view_analytics` database -> Actions -> Grant.
 Grant your quicksight user permissions to `c360view_analytics` database.
 
 
-**Step 11:** Go to [tables](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#tables) in Lake Formation.
+**Step 22:** Go to [tables](https://us-west-2.console.aws.amazon.com/lakeformation/home?region=us-west-2#tables) in Lake Formation.
 
-Grant your quicksight user permissions to `c360denormalized` table.
+Select c360denormalized -> Actions -> Grant.
+
+Grant your quicksight user the following permissions to `c360denormalized` table.
 
 
 ![qs2](/images/qs/qs--12.png)
 
 
-**Step 12 :**  Go to [Quicksight console](https://us-west-2.quicksight.aws.amazon.com/sn/start), US West (Oregon) region.
+**Step 23 :**  Go to [Quicksight console](https://us-west-2.quicksight.aws.amazon.com/sn/start), US West (Oregon) region.
 
 
 ![qs2](/images/qs/qs-07.png)
 
-**Step 11:**   Click on Datasets -> New dataset.
+**Step 24:**   Click on Datasets -> New dataset.
 
 ![qs2](/images/qs/qs-08.png)
 
 
-**Step 12:**   Choose Athena for Data sources.
+**Step 25:**   Choose Athena for Data sources.
 
 ![qs2](/images/qs/qs-09.png)
 
 
-**Step 13:**  New Athena data source.
+**Step 26:**  New Athena data source.
 
 Data source name: c360
+Leave Athena workgroup as primary, and click on Create data source.
+
 
 ![qs2](/images/qs/qs-10.png)
 
-**Step 14:**  Choose your table.
+**Step 27:**  Choose your table.
 
 Database: contain sets of tables: c360view_analytics
+
 Tables: contain the data you can visualize: c360denormalized
 
 
 ![qs2](/images/qs/qs--13.png)
 
-Select.
+Click on *Select.*
 
 
-**Step 15:**  Choose Directly Query your data -> Visualize.
+**Step 28:**  Choose Directly Query your data -> Visualize.
 
 
 ![qs2](/images/qs/qs--14.png)
 
 
-**Step 16:**  From the field list choose `occupation`.
+**Step 29:**  From the field list choose `occupation`.
 
 
-**Step 17:**  From the visual type select **Pie chart**.
+**Step 30:**  From the visual type select **Pie chart**.
 
 ![qs2](/images/qs/graph-1.png)
 
 
-**Step 18:**  Add new visual.
+**Step 31:**  Click on *+ Add*, and then on Add new visual.
 
 ![qs2](/images/qs/graph-2.png)
 
-**Step 19:**  Select the following fields.
+**Step 32:**  Select the following fields.
 
 - head_of_household_flag
 - marital_status
 - l3mcredit_avg
 
-**Step 20:**  Click on **Field wells** to check everything is in the correct place.
+**Step 33:**  Click on **Field wells** to check everything is in the correct place.
 
 ![qs2](/images/qs/graph-3.png)
