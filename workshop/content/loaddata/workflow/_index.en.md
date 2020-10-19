@@ -46,6 +46,8 @@ Go to [Lake Formation Workflows Blueprints](https://us-west-2.console.aws.amazon
 
 ![bp 1](/images/workflow/pic-wf05.png)
 
+Click on *Create*. 
+
 
 **Step 4:** After created it **Start it now**
 

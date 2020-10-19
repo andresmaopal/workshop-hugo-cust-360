@@ -27,8 +27,9 @@ we are going to use a snapshot ingestion for this exercise.
 *	**Database Engine:** PostgreSQL
 
 
-
 ![cf 1](/images/blueprint/pic-bp01.png)
+
+Click on Next.
 
 
 **Step 2:** Set up access, choosing your Instance sourcemf:
@@ -39,6 +40,8 @@ we are going to use a snapshot ingestion for this exercise.
 *	**Password:** `Tim3t0change`
 
 ![cf 2](/images/blueprint/pic-bp02.png)
+
+Click on Next.
 
 
 **Step 3:** Click on **Finish:**
@@ -57,13 +60,14 @@ Use refresh button to see your connection.
 
 **Step 6:** In the Security groups section check the **c360view-c360-Access** and **c360view-RDS-Source** security group:
 
-* **Group name:** c360view-c360-Access
-and c360view-RDS-Source
+* **Security Group names:** `c360view-c360-Access`
+and `c360view-RDS-Source`
 * **Password:** `Tim3t0change` (re-enter it)
 
 ![cf 5](/images/blueprint/pic-bp05.png)
 
-Next -> Finish.
+Click on *Next*, and then on *Finish*.
+
 
 **Step 7:** Test your connection:
 *	**IAM role:** Glue-role-c360view

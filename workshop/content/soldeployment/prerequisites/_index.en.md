@@ -50,7 +50,7 @@ To know more about VPC endpoint click on [VPC endpoint documentation](https://do
 
 ![Deployvpc 1](/images/soldeployment/pic-d-vpc-1.png)
 
-**Step 2:** Choose AWS Services.
+**Step 2:** Click on **Create Endpoint** and then choose **AWS Services**.
 
 ![Deployvpc 2](/images/soldeployment/pic-d-vpc-2.png)
 

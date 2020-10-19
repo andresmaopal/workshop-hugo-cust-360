@@ -7,7 +7,7 @@ chapter = true
 pre = "<b>2. </b>"
 +++
 
-You will use lambda functions to generate data via schedulers in CloudWatch, AWS Lake Formation to catalog, load and manage your Data lake.
+You will use AWS Lambda functions to generate data via schedulers in Amazon CloudWatch, AWS Lake Formation to catalog, load data into and manage your Data lake.
 
 ![bp 1](/images/lakeformation/hhug-load-data.png)
 

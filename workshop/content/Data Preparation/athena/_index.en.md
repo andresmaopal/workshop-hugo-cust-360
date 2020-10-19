@@ -57,6 +57,9 @@ Type s3://< your_stage_bucket_name >/athena-results/ as location path.
 
 ![bp 0](/images/athena/pic-at03.png)
 
+Click on Save.
+
+
 **Step 8:** Choose `c360view_raw` to check the raw tables.
 
 ![bp 0](/images/athena/pic-at04.png)
@@ -71,7 +74,7 @@ Type s3://< your_stage_bucket_name >/athena-results/ as location path.
 
 
 Notice that as we had CSV without header the name of the columns where crawled as col0 to col3 in the RAW data.
-You can edit this on AWS Glue, but our jobs to processed the data in Step Functions are already aware of it.
+You can edit this on AWS Glue, but our jobs to process the data in Step Functions are already aware of it.
 
 If you go to c360view_stage database you will find a different scenario.
 
