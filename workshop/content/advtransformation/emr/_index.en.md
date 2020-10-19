@@ -9,7 +9,7 @@ pre = "<b>4.3 </b>"
 
 To create a denormalized table we are going to run a job on [Amazon EMR](https://aws.amazon.com/emr/?nc1=h_ls).
 
-Amazon EMR is a powerful cluster, that you can set with few machines like in this blog or tens to thousands of machines. Consider using [spot instances](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html) for batch processing and terminate your clusters when you are not using them. It is also recommended to store job results on Amazon S3.
+Amazon EMR is a powerful cluster, that you can set with few machines like in this Workshop or tens to thousands of machines. Consider using [spot instances](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-purchasing-options.html) for batch processing and terminate your clusters when you are not using them. It is also recommended to store job results on Amazon S3.
 
 **Step 1:** Go to [EMR console](https://us-west-2.console.aws.amazon.com/elasticmapreduce/home?region=us-west-2).
 
