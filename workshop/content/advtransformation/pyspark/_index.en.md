@@ -56,7 +56,7 @@ Notice that in this Python script that converts a query result from Amazon Athen
 
 Save.
 
-**Step 10:** Now select the **Jobcust360etlmftrans**, Action and run job.
+**Step 10:** Now select the **Jobcust360etlmftrans**. Click on Action, and then on Run job.
 
 ![bp 1](/images/pyspark/pic-py05.png)
 
